@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+​
+<body>
+    <section>
+    <div>
+        <h1>
+            A small quiz on 
+            what you learnt
+        </h1>
+        <br><br>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.spreadshirtmedia.net%2Fimage-server%2Fv1%2Fcompositions%2F146061946%2Fviews%2F1%2Cwidth%3D300%2Cheight%3D300%2CappearanceId%3D1%2Cversion%3D1479794067%2Fearth-s-ozone-layer-drawing-hoodies-kids-premium-hoodie.jpg&f=1&nofb=1" alt="">
+        <form action="mailto:vinigudiya@gmail.com,anviankur@gmail.com?Subject=Ozone Quiz" method="POST" enctype="text/plain">
+            <label for="question">What's the chemical formula of ozone?</label>
+            <input type="text" placeholder="Type your answer here" maxlength="10" minlength="1" />
+            <br>
+            <br>
+            <label for="question">Which gas is responsible for the hole in the ozone layer(full name of the gas ,emitted
+                by fridges and AC's)?</label>
+            <input type="text" placeholder="Type your answer here" maxlength="20" minlength="1" />
+            <br>
+            <br>
+            <label for="question">In which layer of the atmosphere is the ozone present?</label>
+            <input type="text" placeholder="Type your answer here" maxlength="40" minlength="1" />
+            <br>
+            <br>
+            <label for="question">What is the function of ozone layer?</label>
+            <textarea name="what" id="what" cols="30" rows="4">The function of ozone layer is...</textarea>
+            <br>
+            <br>
+            <label for="question">Mention any 2 ways to prevent depletion of ozone layer.</label>
+            <textarea name="mention" id="mention" cols="30" rows="7">The 2 ways to prevent depletion of ozone layer are:- ......</textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+    <br>
+    <br>
+​<div id="div">
+    <h4 id="hfour">Now that this journey through our webpage is done,how much would you rate us?</h4>
+    <div class="rate" id="rate2" onclick="rate2()">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+        
+    </div>
+    <br><br>
+    <h4 id="thank">Thanks for the feedback!!!</h4>
+</div>
+<br>
+<br>
+</section>
+<script>
+    function rate2(){
+        document.getElementById("rate2").style.display="none";
+        document.getElementById("hfour").style.display="none";
+        document.getElementById("thank").style.display="inherit";
+        
+    }
+</script>
+</body>
+​
+</html>
+
+
+
+

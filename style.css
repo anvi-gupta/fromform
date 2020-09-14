@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Grandstander', cursive;
+    text-align: center;  
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feblanchardblog.files.wordpress.com%2F2018%2F03%2Fshutterstock_687236506.jpg&f=1&nofb=1');
+    background-size:cover;
+    
+}
+section{
+    width: 550px;
+    height: 100%;
+    background-color: cyan;
+    margin: auto;
+    padding: 10px 0;
+}
+
+div{
+    text-align: center;
+}   
+input[type="text"],textarea,form{
+    width: 350px;
+    padding: 8px;
+}
+form{
+    margin: auto;
+}
+label{
+    font-weight: bold;
+}
+input, textarea{
+    margin: 10px;
+}
+input[type="submit"]{
+    background-color:#1e90ff;
+    color: white;
+    margin: auto;
+    display: block;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 120%;
+}
+#div{
+    display: inline-block;
+}
+.rate {
+    display: inline-block;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float: right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+    
+    
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+#thank{
+    display: none;
+    color: mediumorchid;
+    font-size: 150%;
+}
+h1{
+    color: deeppink;
+    font-size: 200%;
+}
+img{
+    width: 100% 100%;
+}
+#hfour{
+    font-size: 150%;
+}
